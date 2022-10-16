@@ -1,0 +1,22 @@
+//Part 2.2
+class Main {
+    public static int array[] = { 4, 3, 6, 9};
+
+    public static int answer(int x[], int y)
+    {
+        if (y <= 0)
+            return 0;
+        return (answer(x, y - 1) + x[y - 1]);
+    }
+
+    public static void main(String[] args)
+    {
+        println(answer(array, array.length));
+    }
+    //better System.out.println
+    public static void println(int s) {
+        System.out.println(s);
+    }
+
+}
+
