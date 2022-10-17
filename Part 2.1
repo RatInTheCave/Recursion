@@ -1,0 +1,29 @@
+//Part 2.1
+public class Main {
+    public static void main(String[] args) {
+        int[] pos = new int[]{10, 20, 30, 40};
+        printArray(pos, 1);
+    }
+
+    public static void printArray(int[] array, int i){
+
+
+
+        print(array[i-1]);
+        println(" ");
+        if(i==array.length) {
+            return;
+        }
+        printArray(array, i+1);
+    }
+    //better System.out.print
+    public static void print(int s) {
+        System.out.print(s);
+    }
+
+    //better System.out.println
+    public static void println(String s) {
+        System.out.println(s);
+    }
+
+}
